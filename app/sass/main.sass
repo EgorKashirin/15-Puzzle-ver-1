@@ -1,0 +1,82 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+@font-face
+  font-family: GothamPro
+  src: url('../fonts/GothamPro.eot')
+  src: local(GothamPro), url('fonts/GothamPro.ttf')
+
+@font-face
+  font-family: GothamProLight
+  src: url('../fonts/GothamProLight.ttf') format("opentype")
+  src: local(GothamProLight), url('fonts/GothamProLight.ttf')
+
+@font-face
+  font-family: LatoRegular
+  src: url('../fonts/LatoRegular.ttf') format("opentype")
+  src: local(LatoRegular), url('fonts/LatoRegular.ttf')
+
+body
+  background: #4b4b42 url(https://i.pinimg.com/originals/ff/c9/69/ffc969925625c3156af6bd6ffd9a6267.jpg) center no-repeat
+  background-size: cover
+
+.header,.footer
+  color: white
+  text-align: center
+  text-shadow: 1px 1px 4px black
+
+.header
+  margin-top: 200px
+
+.body
+  margin-top: 50px
+
+.footer
+  h1
+    margin: 5px
+.button-reset
+  color: white
+  background-color: #FFD400
+  border-radius: 10px
+  width: 180px
+  height: 35px
+  text-align: center
+  text-shadow: 1px 1px 4px black
+  margin-top: 50px
+  margin-bottom: 50px
+  outline: 0 none !important
+  cursor: pointer
+  &:hover
+    background: #FFEB3B
+    box-shadow: 0 0 15px #FFEB3B
+    z-index: 100
+
+  &:active
+    font-size: 20px
+    box-shadow: 0 0 5px white
+
+.canvas
+  position: relative
+  display: flex
+  overflow: hidden
+  margin: auto
+  width: 320px
+  height: 320px
+  padding: 10px
+  background: transparent
+  border-radius: 10px
+  box-shadow: 0 0 20px black
+  cursor: pointer
+  // &:hover
+  //   background: #FFEB3B
+  //   box-shadow: 0 0 15px #FFEB3B
+  //   z-index: 100
+
+  //   &:active
+  //     font-size: 70px
+  //     box-shadow: 0 0 5px white
+#steps
+  margin-bottom: 120px
+
+@import "media" // Always at the end
